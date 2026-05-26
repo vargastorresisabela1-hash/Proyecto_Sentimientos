@@ -111,7 +111,7 @@ def call_claude(prompt, system="Eres un analizador de sentimientos experto en es
     }
     body = {
         "model": "llama-3.3-70b-versatile",
-        "max_tokens": 6000,
+        "max_tokens": 10000,
         "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": prompt}
