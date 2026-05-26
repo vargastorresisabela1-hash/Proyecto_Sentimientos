@@ -13,7 +13,7 @@ import os
 
 import pandas as pd
 
-df = pd.read_excel("opiniones.xlsx")
+df = pd.read_excel("Opiniones.xlsx")
 print(df.head())
 
 # ── Page config ──────────────────────────────────────────────────────────────
