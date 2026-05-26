@@ -9,6 +9,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
+import os
 
 import pandas as pd
 
@@ -101,7 +102,7 @@ def load_data():
 df_all = load_data()
 
 # ── Groq API call ──────────────────────────────────────────────────────────
-GROQ_API_KEY = "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"
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "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")
 
 def call_claude(prompt, system="Eres un analizador de sentimientos experto en español."):
     headers = {
